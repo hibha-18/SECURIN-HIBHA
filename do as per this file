@@ -1,0 +1,17 @@
+1st run this in terminal 
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+python parse_and_load.py
+--------------------------------------------------above this line everything in one terminal
+uvicorn main:app --host 127.0.0.1 --port 8000
+-------------------------------------------------------one line above in seperate terminal open new terminal 
+
+
+
+to check api health : API health check: http://127.0.0.1:8000/health
+ui health : UI: http://127.0.0.1:8000/index
+run everything one by one re
